@@ -9,10 +9,11 @@ require("dotenv").config();
 const app = express();
 
 const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
 
 mongoose
   .connect(
-    "mongodb+srv://dk1242:Dhruval@1242@cluster0.t4xrw.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "mongodb+srv://dk1242:Dhruval@1242@cluster0.t4xrw.mongodb.net/<NYHack>?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useCreateIndex: true,
@@ -29,6 +30,7 @@ app.use(cookieParser());
 app.use(cors());
 
 app.use("/api", authRoutes);
+app.use("/api", userRoutes);
 
 const PORT = 8000;
 

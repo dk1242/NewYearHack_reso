@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
     },
     salt: String,
-    resolutions: {
+    history: {
       type: Array,
       default: [],
     },
