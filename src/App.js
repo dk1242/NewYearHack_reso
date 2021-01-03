@@ -3,6 +3,7 @@ import Home from './home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from './components/login/login.js';
 import register from './components/login/register';
+import CenteredGrid from './components/display/grid'
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       <Route path="/" exact component={Home} />
       <Route path="/login" component={Login} />    
       <Route path="/register" component={register} />
+      <Route path="/reso" component={CenteredGrid} />
           {/* <Header />
           <Main />
           <Footer /> */}

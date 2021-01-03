@@ -70,9 +70,6 @@ class register extends Component {
   }
 
   render() {
-
-  
-
     return (
         <form>
           {/* I am just sending a basic error message */}
