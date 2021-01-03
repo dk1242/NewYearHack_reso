@@ -35,20 +35,20 @@ export default function CenteredGrid() {
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
               <div className="align">
-                  Name
+                  Janit
               </div>
               <div className="align1">
-                  Content Goes here
+                  To learn ML and AI
               </div>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
               <div className="align">
-                  Name
+                 Name
               </div>
               <div className="align1">
-                  Content Goes here
+                  Resolution
               </div>
           </Paper>
         </Grid> 
